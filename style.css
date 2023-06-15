@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/metaverso.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container,
+.container2 {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+.logo-s-pg img {
+    height: 50px;
+    cursor: pointer;
+}
+
+.links-navbar ul {
+    display: flex;
+    gap: 10px;
+}
+
+.links-navbar ul li {
+    list-style: none;
+}
+
+.links-navbar ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 10px;
+}
+
+.nav-hamburguer {
+    display: none;
+}
+
+.links-navbar ul li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.content-pric {
+    bottom: 150px;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.sc-content {
+    width: 55%;
+    height: 350px;
+    border: 2px solid #fff;
+    padding: 2rem;
+}
+
+.sc-content h3 {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+
+
+.sec-est {
+    padding: 3rem 0rem;
+}
+
+
+.content-sec-img img {
+    width: 425px;
+    height: 300px;
+}
+
+.content-sec {
+    padding: 4rem;
+    height: 600px;
+}
+
+.content-sec-tex {
+    width: 600px;
+    height: 300px;
+    background-color: #fff;
+    position: relative;
+    bottom: 100px;
+    left: 300px;
+    padding: 2rem 3rem;
+}
+
+.content-header h3 {
+    color: #212028;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content-body {
+    color: #646464;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+}
+
+.our-jobs {
+    width: 100%;
+    height: auto;
+    padding: 25px 0px;
+}
+
+.our-jobs-tx {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+
+.our-jobs-title {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.our-jobs-title h3 {
+    color: #212028;
+    font-size: 34px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.our-jobs-btn {
+    display: flex;
+    align-items: center;
+}
+
+.our-jobs-btn button {
+    width: 135px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #212028;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.our-jobs-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.our-jobs-card {
+    width: 266px;
+    height: 375px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.our-jobs-card:hover {
+    transform: scale(103%);
+    box-shadow: 0px 0px 20px #00000055;
+}
+
+.our-jobs-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.our-jobs-card-description {
+    width: 100%;
+    position: relative;
+    bottom: 50px;
+    padding: 0px 15px;
+}
+
+.our-jobs-card-description span {
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fot-rede-sociais-copy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fot-lg img {
+    height: 40px;
+}
+
+.fot-redes-links-sociais ul {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+}
+
+.fot-redes-links-sociais ul li a{
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.fot-redes-links-sociais ul li a:hover{
+    border-bottom: 1px solid #fff;
+    padding-bottom: 8px;
+}
+
+.fot-redes-links-sociais ul li i {
+    color: #fff;
+    font-size: 30px;
+}
+
+.for-min-navbar {
+    margin-top: 15px;
+}
+
+.fot-ds-min-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.for-copy span {
+    color: rgba(52, 52, 57, 0.701);
+}
+
+
+
+@media (max-width: 759px) {
+    .container {
+        width: 80%;
+    }
+
+    header {
+        height: 1000px;
+        padding: 3rem 0rem;
+    }
+
+    header > .container {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .content-pric {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 5rem;
+    }
+
+    .content-sec-tex {
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+        padding: 2rem 3rem;
+        position: static;
+    }
+
+    .content-sec {
+        height: auto;
+    }
+
+    .sc-content {
+        width: 80%;
+        height: 400px;
+        padding: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sc-content h3 {
+        color: #fff;
+        font-size: 55px;
+        font-weight: 400;
+    }
+
+    .links-navbar {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .nav-hamburguer {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0px;
+    }
+
+    .nav-hamburguer i {
+        color: #fff;
+        font-size: 30px;
+        transition: 0.3s;
+    }
+    
+    .nav-hamburguer i:hover {
+        transform: scale(105%);
+    }
+
+    .nav-hamburg-links {
+        width: 100%;
+    }
+
+    .links-navbar-burg {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .links-navbar-burg ul {
+        width: 100%;
+        list-style: none;
+        height: 245px;
+        background-color: transparent;
+        
+    }
+
+    .links-navbar-burg ul li{
+        width: 100%;
+        display: block;
+        padding: 15px 0px;
+        text-align: center;
+        border: 2px solid #fff;
+        background-color: rgba(0, 0, 0, 0.3);
+        margin-bottom: 10px;
+    }
+    
+    .links-navbar-burg ul li a{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .our-jobs-cards {
+        display: flex;
+        justify-content: center;
+    }
+
+    .fot-ds-min-links {
+        text-align: center;
+        display: block;
+    }
+
+    footer {
+        display: flex;
+    }
+
+    .for-min-navbar {
+        display: none;
+    }
+
+    .fot-rede-sociais-copy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mg-b {
+        margin-bottom: 30px;
+    }
+
+    .content-sec-img img{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .our-jobs-card {
+        width: 350px;
+        height: 450px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .sc-content {
+        width: 100%;
+        height: auto;
+        padding: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sc-content h3 {
+        color: #fff;
+        font-size: 10vw;
+        font-weight: 400;
+    }
+
+    .content-sec {
+        padding: 4rem 0rem;
+    }
+
+    .content-sec-tex {
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+
+    .our-jobs-tx,
+    .our-jobs-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-jobs-title h3 {
+        font-size: 6vw;
+    }
+
+}
+
+@media (min-width: 760px) and (max-width: 990px) {
+    .container,
+    .container2 {
+        width: 90%;
+    }
+
+    .content-pric {
+        width: 90%;
+    }
+
+
+    .sc-content {
+        width: 50%;
+        height: 350px;
+        padding: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sc-content h3 {
+        color: #fff;
+        font-size: 52px;
+        font-weight: 400;
+    }
+
+    .content-sec {
+        height: auto;
+    }
+
+    .content-sec-img img{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .content-sec-tex {
+        width: 100%;
+        height: 300px;
+        background-color: #fff;
+        padding: 2rem 3rem;
+        position: static;
+    }
+
+    .our-jobs-cards {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .fot-ds-min-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .for-copy,
+    .for-min-navbar {
+        margin-top: 2rem;
+    }
+    
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .container2,
+    .container,
+    .content-pric {
+        width: 90%;
+    }
+
+    .our-jobs-cards {
+        justify-content: center;
+    } 
+}
